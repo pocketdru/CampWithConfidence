@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
+
+    <!--This is where conflicts began-->
+    <!--leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <!--leaflet-->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div class="row rw-1">
+        <div class="col-md-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4 hvr-shadow">Find a camping</h1>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row rw-2">
+        <div class="col-md-3">
+            <div class="search-field">
+                <form>
+                    <label for="formGroupExampleInput">Camping Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Yellowstone National Park">
+                    <button type="button" id="submit-btn" class="btn btn-outline-primary hvr-icon-rotate hvr-shadow">Search
+                        <i class="fas fa-campground"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="clothingRecommendations">
+                <h5>Clothing Recommendations</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum at.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-black">
+                <img class="card-img" src="assets/images/example-img.png" alt="Card image">
+                <div class="info">
+                    <p>Name</p>
+                    <p>Info</p>
+                </div>
+            </div>
+            <div class="map-container">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="forecast">
+                <h3>Forecast</h3>
+                <div class="forecast-view table">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum at.
+                        Proin sagittis nisl rhoncus mattis rhoncus.</p>
+                </div>
+            </div>
+            <div class="campsite">
+                <h3 class="camp-name">Selected Campsite</h3>
+                <p class="camp-descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum at.
+                    Proin sagittis nisl rhoncus mattis rhoncus.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row rw-3">
+        <div class="col-md-12">
+            <h2>What people says</h2>
+            <div class="comments">
+                <!--<p><span id="userName">Name</span>
+                    <br><span id="userComment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</span></p>-->
+            </div>
+
+        </div>
+    </div>
+    <div class="row rw-4">
+        <div class="col-md-12">
+            <h2>Leave your feedback</h2>
+        </div>
+        <div class="col-md-12">
+            <form>
+                <div class="form-row">
+                    <div>
+                        <input type="text" class="form-control" id="personName" placeholder="Name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="personComment" placeholder="Comment">
+                    </div>
+                    <button type="button" id="сomment-btn" class="user-feedback btn btn-outline-primary hvr-icon-rotate hvr-shadow">Send
+                        feedback
+                        <i class="fas fa-map-marked-alt"></i>
+                    </button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row footer">
+        <p>Copyright &copy;</p>
+    </div>
+    </div>
+    <!-- JAVASCRIPT  -->
+    <!-- ========================================= -->
+    <!-- Link to Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!--jquery AJAX-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--homegrown js-->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+.col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-9, .col-md-12 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+body {
+    font-family: "Courgette";
+    color: #282828;
+    background-image: url("../images/weather.png");
+}
+
+.container {
+    padding: 0px;
+}
+
+.row {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.rw-1 {
+    background: url("../images/weather.png");
+    background-color: #f6f5f3;
+    padding: 0px;
+}
+
+.rw-2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url("../images/header.png") no-repeat;
+}
+
+.rw-3 {
+    background-image: url("../images/Group_4.png");
+    height: 300px;
+    color: #f6f5f3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rw-4 {
+    background-image: url("../images/Rectangle_25.png");
+    padding-top: 20px;
+    color: #f6f5f3;
+    text-align: center;
+    padding-bottom: 20px;
+    height: 200px;
+}
+
+.jumbotron {
+    background-color: aliceblue;
+    background: url("../images/3.png");
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.display-4 {
+    font-size: 4em;
+}
+
+.jumbotron h1 {
+    background: rgb(255, 255, 255, 0.3);
+    border: 2px solid black;
+    width: 480px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form,
+
+.comments p, .forecast, .campsite, .clothingRecommendations, .map-container, .card, input[placeholder] {
+
+    background: rgba(145, 186, 212, 0.2);
+    border: 2px solid rgb(122, 136, 148);
+    border-radius: 5px;
+}
+
+form, .info, .forecast, .campsite, .comments, .clothingRecommendations, .map-container {
+    padding: 10px;
+}
+
+label {
+    font-size: 25px;
+}
+
+input[placeholder] {
+    letter-spacing: 2.5px;
+    padding-left: 30px;  
+    background: rgb(215, 242, 255);
+}
+
+.comments, .clothingRecommendations, .campsite, .map-container {
+    margin-top: 5px;
+}
+
+#submit-btn {
+    margin-top: 15px;
+}
+
+
+.comments {
+    display: flex;
+}
+
+.comments p {
+    margin: 10px;
+    padding: 7px;
+    width: 200px;
+    font-size: 14px;
+}
+
+#userName {
+    font-size: 16px;
+    text-align: center;
+}
+
+input[placeholder="Name"] {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#comment-btn {
+    color: #f6f5f3;
+}
+
+.footer {
+    height: 200px;
+    background-image: url("../images/squ.png");
+    background-position: right;
+}
+/* this is where conflicts began */
+.comments {
+    display: flex;
+}
+
+.comments p {
+    margin: 10px;
+    padding: 7px;
+    width: 200px;
+    font-size: 14px;
+}
+
+#userName {
+    font-size: 16px;
+    text-align: center;
+}
+
+input[placeholder="Name"] {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#comment-btn {
+    color: #f6f5f3;
+}
+
+.footer {
+    height: 200px;
+    background-image: url("../images/squ.png");
+    background-position: right;
+}
+/* Icon Rotate */
+.hvr-icon-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-icon-rotate .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-icon-rotate:hover .hvr-icon, .hvr-icon-rotate:focus .hvr-icon, .hvr-icon-rotate:active .hvr-icon {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  #mapid {
+       height: 225px; 
+  }
+
